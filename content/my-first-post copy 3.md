@@ -6,7 +6,7 @@ description = "This is a Description"
 image = "/images/1s.webp"
 imageBig = "/images/1b.webp"
 categories = ["general", "life", "coding"]
-authors = ["invixon"]
+authors = ["ramaiah"]
 avatar = "/images/avatar.webp"
 +++
 
