@@ -14,9 +14,9 @@
             <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
          </div>
          <div class="listItemCategories">
-            <a href="" class="listItemCategory">Fitness</a>
-            <a href="" class="listItemCategory">Art</a>
-            <a href="" class="listItemCategory">Gaming</a>
+            {{ range (.GetTerms "categories")}}
+            <a class="listItemCategory" href={{ .Permalink }}>{{ .Name }}</a>
+            {{ end }}
          </div>
       </div>
 
