@@ -9,10 +9,14 @@
          </h1>
          <p class="listItemDescription">{{ .Params.description }}</p>
          <div class="listItemDetail">
-            <img src={{.Params.avatar}} loading="laz
-            " alt="">
+            <img src={{.Params.avatar}} loading="lazy" alt="" class="listItemAvatar">
             <span></span>
-            time="{{.Date}}"
+            <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
+         </div>
+         <div class="listItemCategories">
+            <a href="" class="listItemCategory">Fitness</a>
+            <a href="" class="listItemCategory">Art</a>
+            <a href="" class="listItemCategory">Gaming</a>
          </div>
       </div>
 
